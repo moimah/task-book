@@ -1,0 +1,26 @@
+<template id="template-add-task">
+    <div class="container-fluid p-0">
+        <h5 class="ms-2 text-center">Enter your new task</h5>
+        <div class="text-start">
+            <label for="taskContentArea">Task content:</label>
+            <textarea id="taskContentArea" type="text" class="form-control my-input mt-1" style="height: 150px"></textarea>
+        </div>
+        <div class="text-start mt-3">
+            <label for="assignation">Asignation:</label>
+            <select id="assignation" class="form-select my-input" aria-label="Default select example">
+                <option disabled selected>Assign task</option>
+            </select>
+        </div>
+        <div class="text-start mt-3">
+            <label for="startDate">Start date:</label>
+            <input id="startDate" class="form-control my-input" type="date">
+        </div>
+        <div class="text-start mt-3">
+            <label for="taskDuration">Task duration in hours:</label>
+            <input id="taskDuration" type="number" min="0" value="0" class="form-control my-input mt-1">
+        </div>
+        <div class="d-grid gap-2 mt-3">
+            <button id="btnSaveTask" class="purple" type="submit">SAVE</button>
+        </div>
+    </div>
+</template>

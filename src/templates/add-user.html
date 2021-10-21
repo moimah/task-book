@@ -1,0 +1,51 @@
+<template id="template-add-user">
+    <div id="userControl" class="container-fluid text-start">
+        <h5 class="ms-2 text-center"><b>Enter the new users:</b></h5>
+        <ul id="userList" class="list-group"></ul>
+        <div class="row text-start mt-3">
+            <div class="col-7">
+                <label for="usernameInput">Username:</label>
+                <input id="usernameInput" type="text" class="form-control my-input mt-1">
+            </div>
+            <div class="col-5">
+                <div class="text-end">
+                    <label for="timeUserInput" style="margin-right: 50px">h:</label>
+                    <div class="d-flex justify-content-end">
+                        <input id="timeUserInput" type="number" value="0" min="0" class="form-control my-input mt-1 me-0" style="width: 70px">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mt-3 text-center">
+            <button id="btnSaveUser" class="purple mb-0" type="submit" style="width: 160px">SAVE USER</button>
+            <button id="btnCloseUser" class="pink" type="submit" style="width: 160px">CLOSE</button>
+        </div>
+    </div>
+    <template id="template-user">
+        <li class="list-group-item p-2 d-inline-flex justify-content-around align-items-center user-container">
+            <b></b>
+            <span class="me-0 ms-auto">
+                <span class="me-0 ms-auto time"></span>
+                <i id="test" class="fa fa-user-slash" role="button"></i>
+                </span>
+        </li>
+    </template>
+</template>
+<!--<template id="template-add-user">-->
+<!--    <div class="alert alert-warning d-flex align-items-center">-->
+<!--        <span>-->
+<!--            <small class="bg-white rounded user mb-auto mt-auto fw-bold">-->
+<!--                Teroura-->
+<!--            </small>-->
+<!--        </span>-->
+<!--        <p class="mt-auto mb-auto ms-2"></p>-->
+<!--        <div class="d-inline-flex align-items-center me-0 ms-auto">-->
+<!--            <small class="ms-auto me-2 bg-white fw-bold rounded">22/10/2021</small>-->
+<!--            <h3>-->
+<!--                <i class="fa fa-check-circle text-success" role="button"></i>-->
+<!--                <i class="fa fa-minus-circle text-danger" role="button"></i>-->
+<!--            </h3>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</template>-->

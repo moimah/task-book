@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<head>
+    <title>TASK BOOK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet"/>-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+</head>
+<body>
+
+<app-container>
+
+    <!--NAV for desktop TODO Disabled-->
+    <div class="container-fluid p-0 d-none">
+        <ul id="navOptions" class="nav nav-pills alert-info ms-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="dropDownMenu" class="dropdown-menu" role="button" aria-labelledby="dropdownMenuButton1">
+                    <div id="new-template-launcher" class="dropdown-item">
+                        <i class="fa fa-plus-square text-secondary"></i>
+                        <span>New</span>
+                    </div>
+                    <div id="clone-launcher" class="dropdown-item" role="button">
+                        <i class="fa fa-clone text-secondary"></i>
+                        <span>Clone</span>
+                    </div>
+                    <div id="user-launcher" class="dropdown-item" role="button">
+                        <i class="fa fa-user text-secondary"></i>
+                        <span>Users</span>
+                    </div>
+                    <div id="delete-task-launcher" class="dropdown-item" role="button">
+                        <i class="fa fa-trash text-secondary"></i>
+                        <span>Delete</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--NAV for mobiles-->
+    <div id="mobileMenu" class="container-fluid alert-info fixed-bottom p-2">
+        <div class="row text-center">
+            <div class="col">
+                <h4 role="button">
+                    <i class="fa fa-plus-square text-secondary"></i>
+                </h4>
+            </div>
+            <div class="col">
+                <h4 role="button">
+                    <i class="fa fa-clone text-secondary"></i>
+                </h4>
+            </div>
+            <div class="col">
+                <h4 role="button">
+                    <i class="fa fa-user text-secondary"></i>
+                </h4>
+            </div>
+            <div class="col">
+                <h4 role="button">
+                    <i class="fa fa-trash text-secondary"></i>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-3">
+        <h3 class="title text-center border border-dark">TASK BOOK</h3>
+        <div id="bookControl" class="row text-center">
+            <div class="col-1 text-start ms-3">
+                <h2 role="button"><i class="fas fa-backward text-info ms-0 me-auto"></i></h2>
+            </div>
+            <div class="col">
+                <h5 id="bookPointer"></h5>
+            </div>
+            <div class="col-1 text-end me-3">
+                <h2 role="button">
+                    <i role="button" class="fas fa-forward me-0 ms-auto text-info"></i>
+                </h2>
+            </div>
+        </div>
+        <form id="form">
+        </form>
+        <div id="taskList" class="mt-3">
+        </div>
+        <span id="btnAddTask" class="float" role="button">
+            <i class="fa fa-plus my-float"></i>
+        </span>
+    </div>
+    <div b2b-include-html="templates/simple-task.html"></div>
+    <div b2b-include-html="templates/add-user.html"></div>
+    <div b2b-include-html="templates/add-task.html"></div>
+</app-container>
+
+
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/manage-template.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+
+<!--<script src="js/app.js"></script>-->
+</body>
+</html>

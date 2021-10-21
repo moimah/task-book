@@ -1,0 +1,101 @@
+/*NEW STYLE*/
+/* Colors */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+#buttons {
+    text-align: center;
+    color: #fff;
+}
+.title {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    background-color: #b23cfd;
+    border-bottom: 1px;
+}
+.title-2 {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+button {
+    outline: 0;
+    border: 0;
+    background: none;
+    margin: 25px;
+    padding: 10px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+button.purple {
+    position: relative;
+    border: 2px solid #b23cfd;
+    color: #b23cfd;
+}
+button.purple.active,
+button.purple:active,
+button.purple:hover {
+    background: #b23cfd;
+    color: #fff;
+}
+.purple {
+    position: relative;
+    border: 2px solid #bf55ec;
+    color: #bf55ec;
+}
+.purple.active,
+.purple:active,
+.purple:hover {
+    background: #bf55ec;
+    color: #fff;
+}
+.pink {
+    position: relative;
+    border: 2px solid #f62459;
+    color: #f62459;
+}
+.pink.active,
+.pink:active,
+.pink:hover {
+    background: #f62459;
+    color: #fff;
+}
+.yellow {
+    position: relative;
+    border: 2px solid #f7ca18;
+    color: #f7ca18;
+}
+.yellow.active,
+.yellow:active,
+.yellow:hover {
+    background: #f7ca18;
+    color: #fff;
+}
+.green {
+    position: relative;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+}
+.green.active,
+.green:active,
+.green:hover {
+    background: #2ecc71;
+    color: #fff;
+}
+.orange {
+    position: relative;
+    border: 2px solid #f89406;
+    color: #f89406;
+}
+.orange.active,
+.orange:active,
+.orange:hover {
+    background: #f89406;
+    color: #fff;
+}

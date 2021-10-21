@@ -1,0 +1,98 @@
+*{padding:0;margin:0;}
+
+body{
+  font-family:Verdana, Geneva, sans-serif !important;
+  font-size: 1em;
+}
+
+.text-secondary{
+  color:#b23cfd!important;
+}
+
+.float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:60px;
+  right:15px;
+  background-color:#b23cfd!important;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+  margin-top:25px;
+}
+
+
+
+.my-input:focus {
+  border: none transparent;
+  box-shadow: none;
+  background-color: blanchedalmond;
+}
+.my-input {
+  background-color: aliceblue;
+  border: none transparent;
+  box-shadow: none;
+}
+.my-input::placeholder{
+  opacity: 1;
+}
+
+.swall-overlay {
+  z-index: 100005;
+}
+.swal-modal {
+  z-index: 99999;
+}
+
+.text-area{
+  min-height: 250px;
+  max-height: 300px;
+}
+
+.bg-green{
+  background-color:  #DAFFD4;
+}
+
+
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 1em;
+  }
+  .swal2-popup {
+    font-size: 1em !important;
+    font-family:Verdana, Geneva, sans-serif; !important;
+  }
+  .my-input{
+    font-size: 1em !important;
+  }
+  .my-float{
+    margin-top:22px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
+  .swal2-popup {
+    font-size: 1em !important;
+    font-family:Verdana, Geneva, sans-serif; !important;
+  }
+  .my-input{
+    font-size: 1em !important;
+  }
+  .my-float{
+    margin-top:25px;
+  }
+  .float{
+    right: 10px;
+  }
+}
+
+
