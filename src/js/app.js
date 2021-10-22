@@ -471,16 +471,16 @@ const createInitialPage = () => {
             let newPage = {
                 bookName: bookName,
                 taskCollection: {},
-                userCollection: [],
-
+                userCollection: []
             }
             taskBookCollection.push(newPage);
             currentBookPage = newPage;
             writeBook();
             writeTask();
+            appTask.classList.remove('d-none');
+            Swal.close();
         }
-        appTask.classList.remove('d-none');
-        Swal.close();
+
     });
 
 
